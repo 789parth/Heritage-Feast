@@ -1,0 +1,609 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Fira Code', monospace;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: rgb(40, 40, 40);
+    color: #fff;
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-top: 1vh;
+}
+
+header h5 {
+    margin-top: -1vh;
+}
+
+header h5 a {
+    text-decoration: none;
+}
+
+header h5 a span {
+    color: gold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+header h5 a {
+    color: rgb(75, 75, 75);
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: -3vh;
+}
+
+.home {
+    margin-left: 10vh;
+    padding: 0;
+    height: 90%;
+    width: 90%;
+}
+
+.home .slide {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.home .slide .content {
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.home .slide .image {
+    flex: 1 1 40rem;
+}
+
+.home .slide .image img {
+    width: 100%;
+}
+
+.home .slide .content span {
+    font-size: 1.8rem;
+    color: rgb(80, 80, 80);
+}
+
+.home .slide .content a {
+    text-decoration: none;
+}
+
+.btn {
+    color: black;
+    background-color: rgb(255, 187, 0);
+    height: 2.5rem;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 1.2rem;
+    transition: letter-spacing 0.4s ease-in-out, width 0.4s ease-in-out;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+}
+
+.home .slide .content h3 {
+    margin: 0.5rem 0;
+    font-size: 4rem;
+    color: black;
+}
+
+.title {
+    font-weight: 900;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    letter-spacing: 0.1rem;
+}
+
+.home-category .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-category .box-container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-category .box-container a {
+    height: 30vh;
+    width: 35vh;
+    color: black;
+    border: 0.3vh solid black;
+    text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+.home-category .box-container a img {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 15vh;
+    text-align: center;
+}
+
+.home-category .box-container h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.home-category .box-container .box:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.home-category .box-container .box:hover img {
+    filter: invert();
+}
+
+.home-category .box-container .box:hover h3 {
+    color: white;
+}
+
+.products {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.products a {
+    text-decoration: none;
+    color: black;
+}
+
+.products .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.products .box-container .box {
+    display: flex;
+    width: 25%;
+    padding: 1rem;
+    border: 0.1rem solid #000;
+    position: relative;
+    gap: 2rem;
+}
+
+.products .box-container .box .image {
+    height: 20rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+.products .box-container .box .fa-eye {
+    position: absolute;
+    visibility: hidden;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    background: none;
+    color: black;
+    border: 0.1rem solid black;
+    font-size: 1.3rem;
+    transition: 0.2s;
+}
+
+.products .box-container .box .fa-shopping-cart {
+    position: absolute;
+    visibility: hidden;
+    margin-left: 20rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    background: none;
+    color: black;
+    border: 0.1rem solid black;
+    font-size: 1.3rem;
+    transition: 0.2s linear;
+}
+
+.products .box-container .box:hover .fa-eye {
+    visibility: visible;
+}
+
+.products .box-container .box:hover .fa-shopping-cart {
+    visibility: visible;
+}
+
+.products .box-container .box .cat {
+    color: rgb(80, 80, 80);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.products .box-container .box .cat:hover {
+    text-decoration: underline;
+}
+
+.products .box-container .box .name {
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 540;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+
+.products .box-container .box .flex {
+    display: inline-flex;
+    gap: 15rem;
+}
+
+.products .box-container .box .flex .price {
+    font-size: 1.8rem;
+}
+
+.products .box-container .box .flex .price span {
+    font-size: 2rem;
+    color: rgb(85, 85, 85);
+}
+
+.products .box-container .box .flex .qty {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.quick_view {
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.quick_view .box {
+    margin: 0 auto;
+    max-width: 32rem;
+    border: 0.1rem solid black;
+    padding: 2rem;
+}
+
+.quick_view .box .image {
+    width: 100%;
+    height: 25rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.quick_view .box .cat {
+    font-size: 1.8rem;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+}
+
+.quick_view .box .cat:hover {
+    text-decoration: underline;
+}
+
+.quick_view .box .name {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.quick_view .box .cart-btn {
+    width: 100%;
+    border: 0.1rem solid black;
+    background: none;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.quick_view .box .cart-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.quick_view .box .flex {
+    display: inline-flex;
+    gap: 25rem;
+}
+
+.quick_view .box .flex .price {
+    font-size: 1.8rem;
+}
+
+.quick_view .box .flex .price span {
+    font-size: 2rem;
+    color: rgb(85, 85, 85);
+}
+
+.quick_view .box .flex .qty {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.user-profile {
+    margin: 2rem 2rem;
+}
+
+.user-profile .profile-box {
+    border: 0.1rem solid black;
+    padding: 1.5rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.user-profile .profile-box img {
+    width: 100%;
+    height: 15rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.user-profile .profile-box p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.form-container {
+    border: 0.1rem solid black;
+    padding: 1.5rem;
+    max-width: 30rem;
+    margin: 2rem auto 2rem auto;
+    text-align: center;
+}
+
+.form-container .box {
+    border: 0.1rem solid black;
+    padding: 1rem;
+    height: 1rem;
+    width: 28rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.form-container .file {
+    border: 0.1rem solid black;
+    padding: 0.6rem 1rem 0.5rem 1rem;
+    height: 1.8rem;
+    width: 28rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.form-container select {
+    border: 0.1rem solid black;
+    height: 3rem;
+    width: 30.2rem;
+    font-size: 1.2rem;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-container h3 {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.checkout {
+    margin-bottom: 2rem;
+}
+
+.checkout form {
+    border: 0.1rem solid black;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 40rem;
+}
+
+.checkout form a {
+    text-decoration: none;
+}
+
+.checkout form .cart-items {
+    background-color: black;
+    padding: 2rem;
+}
+
+.checkout form .cart-items h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+.checkout form .cart-items p {
+    text-transform: capitalize;
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    color: rgb(85, 85, 85);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkout form .cart-items p .price {
+    color: gold;
+}
+
+.checkout form .cart-items .grand-total {
+    background-color: white;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.checkout form .cart-items .grand-total .price {
+    color: red;
+}
+
+.checkout form .user-info h3 {
+    margin: 1rem 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: black;
+}
+
+.checkout form .user-info p {
+    padding: 0.3rem 0;
+    font-size: 1.3rem;
+}
+
+.checkout form .user-info .select-box {
+    margin: 1.5rem 0;
+    width: 100%;
+    border: 0.1rem solid black;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.info_btn {
+    background-color: red;
+    height: 3rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 1.2rem;
+    transition: letter-spacing 0.4s ease-in-out, width 0.4s ease-in-out;
+    color: white;
+}
+
+.info_btn:hover {
+    letter-spacing: 0.1rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.orders .box-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 2rem 2rem;
+    padding: 0 12rem 0 12rem;
+}
+
+.orders .box-container .box {
+    border: 0.1rem solid black;
+    padding: 1rem 2rem;
+    flex: 1 1 20rem;
+}
+
+.orders .box-container .box p {
+    line-height: 1.5;
+    font-size: 1.3rem;
+    color: rgb(85, 85, 85);
+}
+
+.orders .box-container .box p span {
+    color: black;
+}
+
+.dashboard {
+    margin: 2rem;
+}
+
+.dashboard a {
+    text-decoration: none;
+}
+
+.dashboard .box-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0 7rem;
+}
+
+.dashboard .box-container .box {
+    flex: 1 1 12rem;
+    text-align: center;
+    border: 0.1rem solid black;
+    padding: 1rem 2rem 1.5rem 2rem;
+}
+
+.dashboard .box-container .box h3 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.dashboard .box-container .box p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    border: 0.1rem solid black;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.admin_orders {
+    margin: 2rem;
+}
+
+.admin_orders a {
+    text-decoration: none;
+}
+
+.admin_orders .box-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: left;
+    flex-wrap: wrap;
+    padding: 0 7rem;
+}
+
+.admin_orders .box-container .box {
+    flex: 1 1 12rem;
+    text-align: left;
+    border: 0.1rem solid black;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.admin_orders .box-container .box p {
+    font-size: 1.2rem;
+}
+
+.admin_orders .box-container .box select {
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
+    margin: 1rem 0 1rem 0;
+}

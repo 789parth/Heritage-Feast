@@ -1,0 +1,202 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Fira Code', monospace;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: rgb(40, 40, 40);
+    color: #fff;
+    width: 100%;
+    height: 25vh;
+    text-align: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-top: 1vh;
+}
+
+header h5 {
+    margin-top: -1vh;
+}
+
+header h5 a {
+    text-decoration: none;
+}
+
+header h5 a span {
+    color: gold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+header h5 a {
+    color: rgb(75, 75, 75);
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: -3vh;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.about .row .image {
+    flex: 1 1 40rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: black;
+}
+
+.about .row .content a {
+    text-decoration: none;
+}
+
+.about .row .content p {
+    padding: 1rem 3rem;
+    line-height: 2;
+    font-size: 1rem;
+    color: rgb(50, 50, 50);
+}
+
+.btn {
+    background-color: rgb(255, 187, 0);
+    height: 2.5rem;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 1.2rem;
+    transition: letter-spacing 0.4s ease-in-out, width 0.4s ease-in-out;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+}
+
+.title {
+    font-weight: 900;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    letter-spacing: 0.1rem;
+}
+
+.steps {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.steps .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.steps .box-container .box {
+    text-align: center;
+    border: 0.1rem solid black;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.steps .box-container .box img {
+    height: 12rem;
+    width: 100%;
+    object-fit: contain;
+    text-align: center;
+}
+
+.steps .box-container h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.steps .box-container .box:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.steps .box-container .box:hover img {
+    filter: invert();
+}
+
+.steps .box-container .box:hover h3 {
+    color: white;
+}
+
+.reviews {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.reviews .slide {
+    margin-bottom: 4rem;
+    border: 0.1rem solid black;
+    text-align: center;
+}
+
+.reviews .slide img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.reviews .slide p {
+    padding: 0.2rem 3rem;
+    line-height: 2;
+    font-size: 0.8rem;
+    color: rgb(50, 50, 50);
+}
+
+.reviews .slide .stars {
+    display: inline-block;
+    border: 0.1rem solid black;
+    padding: 0.5rem 0.5rem;
+}
+
+.reviews .slide .stars i {
+    font-size: 1rem;
+    color: gold;
+}
+
+.reviews .slide h3 {
+    margin-top: 1rem;
+    color: black;
+    text-align: center;
+}

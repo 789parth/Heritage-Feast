@@ -1,0 +1,34 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Fira Code', monospace;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.footer {
+    display: flex;
+    margin-top: 7vh;
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(41, 41, 41);
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding-top: 3vh;
+    margin-bottom: -5vh;
+}
+
+.footer .name {
+    color: gold;
+}

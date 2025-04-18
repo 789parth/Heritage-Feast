@@ -1,0 +1,93 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Fira Code', monospace;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.detail .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.detail .box-container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.detail .box-container a img {
+    height: 15vh;
+    width: 15vh;
+    text-align: center;
+    margin-top: 7vh;
+}
+
+.detail .box-container a {
+    height: 35vh;
+    width: 35vh;
+    color: black;
+    border: 0.3vh solid black;
+    text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+.detail .box-container a h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: -1vh;
+}
+
+.detail .box-container a h4 {
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(75, 75, 75);
+}
+
+.detail .box-container a h5 {
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    margin-top: -2vh;
+    margin-bottom: 6vh;
+}
+
+.detail .box-container .box:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.detail .box-container .box:hover img {
+    filter: invert();
+}
+
+.detail .box-container .box:hover h3 {
+    color: white;
+}
+
+.detail .box-container .box:hover h4 {
+    color: white;
+}
+
+.detail .box-container .box:hover h5 {
+    color: white;
+}
