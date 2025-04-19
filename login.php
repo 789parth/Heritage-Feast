@@ -1,3 +1,9 @@
+<!-- Loader Section Starts -->
+
+<?php include("loader.php"); ?>
+
+<!-- Loader Section Ends -->
+
 <?php
 
 // Navbar Starts 
@@ -84,10 +90,5 @@ if (isset($_POST["submit"])) {
 
 <!-- Footer Section Ends -->
 
-<!-- Loader Section Starts -->
-
-<?php include("loader.php"); ?>
-
-<!-- Loader Section Ends -->
 
 </html>

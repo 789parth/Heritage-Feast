@@ -1,3 +1,9 @@
+<!-- Loader Section Starts -->
+
+<?php include("loader.php"); ?>
+
+<!-- Loader Section Ends -->
+
 <?php include("connect.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -143,11 +149,5 @@
 
 <!-- Footer Section Ends -->
 
-
-<!-- Loader Section Starts -->
-
-<?php include("loader.php"); ?>
-
-<!-- Loader Section Ends -->
 
 </html>

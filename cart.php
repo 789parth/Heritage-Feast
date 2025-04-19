@@ -1,3 +1,9 @@
+<!-- Loader Section Starts -->
+
+<?php include("loader.php"); ?>
+
+<!-- Loader Section Ends -->
+
 <?php include("connect.php"); ?>
 <?php
 session_start();
@@ -147,12 +153,5 @@ session_write_close();
 <?php include("footer.php"); ?>
 
 <!-- Footer Section Ends -->
-
-
-<!-- Loader Section Starts -->
-
-<?php include("loader.php"); ?>
-
-<!-- Loader Section Ends -->
 
 </html>

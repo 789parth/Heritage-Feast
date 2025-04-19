@@ -1,3 +1,9 @@
+<!-- Loader Section Starts -->
+
+<?php include("loader.php"); ?>
+
+<!-- Loader Section Ends -->
+
 <?php
 include("connect.php");
 $usernameError = "";
@@ -91,7 +97,7 @@ if (isset($_POST["submit"])) {
             </div>
             <div class="form-group">
                 <select name="roll" id="roll">
-                    <option value="admin">Admin</option>
+                    <option value="admin" selected disabled>Admin</option>
                     <option value="user">User</option>
                 </select>
                 <div class="error" id="rollError"></div>

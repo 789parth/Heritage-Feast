@@ -1,3 +1,9 @@
+<!-- Loader Section Starts -->
+
+<?php include("loader.php"); ?>
+
+<!-- Loader Section Ends -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,11 +96,5 @@
 
 <!-- Footer Section Ends -->
 
-
-<!-- Loader Section Starts -->
-
-<?php include("loader.php"); ?>
-
-<!-- Loader Section Ends -->
 
 </html>
