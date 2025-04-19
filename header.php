@@ -8,14 +8,14 @@ include("connect.php"); ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heritage Feast</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="navbar.css">
 </head>
 
 <body>
     <div class="navbar">
         <div class="navlogo">
-            <i class="material-icons">restaurant</i>
+            <img src="icons/restaurant.png">
             <h2>Heritage Feast</h2>
         </div>
 
@@ -44,9 +44,9 @@ include("connect.php"); ?>
                 }
             }
             ?>
-            <a href="search.php"><i class="material-icons">search</i></a>
-            <a href="cart.php"><i class="material-icons">shopping_cart</i><span>(<?php echo $value; ?>)</span></a>
-            <a href="#" id="user-btn"><i class="material-icons">person</i></a>
+            <a href="search.php"><i class="fas fa-search"></i></a>
+            <a href="cart.php"><i class="fas fa-shopping-cart"></i><span>(<?php echo $value; ?>)</span></a>
+            <a href="#" id="user-btn"><i class="fas fa-user"></i></a>
             <!-- <a href="search.php"><i class="material-icons">menu</i></a> -->
             <script src="profile_toggle.js"></script>
         </div>

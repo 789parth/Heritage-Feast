@@ -36,6 +36,11 @@ body {
     gap: 0.5rem;
 }
 
+.navlogo img {
+    height: 1.5rem;
+    width: auto;
+}
+
 .navlinks {
     display: flex;
     text-align: center;
@@ -59,7 +64,7 @@ body {
 
 .navicons a i {
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .navicons a {
