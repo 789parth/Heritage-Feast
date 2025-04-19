@@ -67,7 +67,7 @@
             <?php
                     }
                 } else {
-                    echo '<div class="empty">No Products Added Yet!</div>';
+                    echo '<div class="empty">No Products Found!</div>';
                 }
             }
             ?>
@@ -93,7 +93,7 @@
 
 <!-- Loader Section Starts -->
 
-<!-- <?php include("loader.php"); ?> -->
+<?php include("loader.php"); ?>
 
 <!-- Loader Section Ends -->
 

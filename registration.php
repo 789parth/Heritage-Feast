@@ -115,7 +115,7 @@ if (isset($_POST["submit"])) {
 
 <!-- Footer Section Starts -->
 
-<!-- <?php include("footer.php"); ?> -->
+<?php include("footer.php"); ?>
 
 <!-- Footer Section Ends -->
 

@@ -146,7 +146,7 @@
 
 <!-- Loader Section Starts -->
 
-<!-- <?php include("loader.php"); ?> -->
+<?php include("loader.php"); ?>
 
 <!-- Loader Section Ends -->
 
