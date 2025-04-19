@@ -97,8 +97,8 @@ if (isset($_POST["submit"])) {
             </div>
             <div class="form-group">
                 <select name="roll" id="roll">
-                    <option value="admin" selected disabled>Admin</option>
-                    <option value="user">User</option>
+                    <option value="admin" disabled>Admin</option>
+                    <option value="user" selected>User</option>
                 </select>
                 <div class="error" id="rollError"></div>
             </div>
