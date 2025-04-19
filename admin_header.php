@@ -38,7 +38,7 @@ include("connect.php"); ?>
                 $user_id = NULL;
             }
             ?>
-            <a href="#" id="user-btn"><img src="icons/person.png"></a>
+            <a href="#" id="user-btn"><i class="fas fa-user"></i></a>
             <script src="profile_toggle.js"></script>
         </div>
     </div>
